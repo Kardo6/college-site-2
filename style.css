@@ -1,0 +1,294 @@
+:root {
+    --main-color: #F39C5D;
+    --background-color: #F0F1F2;
+    --text-color: rgba(0 0 0 / .5);
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+*:not(.background), *:not(.video) {
+    position: relative;
+    z-index: 10000;
+}
+
+body {
+    max-width: 1920px;
+
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+.background {
+    position: absolute;
+    min-height: 100vh;
+    width: 100vw;
+
+    background-color: rgba(240, 241, 242, .7);
+}
+
+.app {
+    min-height: 100vh;
+    
+    padding: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 75px repeat(2, 2fr);
+    gap: 20px;
+
+    position: relative;
+    z-index: 10000;
+}
+
+.sidebar, .main-search-bar, .top-authors, .top-books, .recommended {
+    background-color: rgba(255 255 255 / .5);
+
+    border-radius: 15px;
+
+    padding: 15px;
+}
+
+/* 1 */
+
+.sidebar {
+    padding: 50px 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+
+    color: var(--text-color);
+}
+
+.sidebar-title {
+    color: var(--main-color);
+    font-weight: 900;
+}
+
+.sidebar-nav, .sidebar-warn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-warn {
+    margin-top: auto;
+
+    font-size: 13px;
+
+    gap: 5px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 2 */
+
+.main-search-bar {
+    color: var(--text-color);
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-bar {
+    position: relative;
+
+    display: flex;
+}
+
+.search {
+    width: 400px;
+    padding: 10px;
+
+    font-family: inherit;
+    font-size: 15px;
+    
+    border: 1px solid rgba(0 0 0 / .3);
+    outline: none;
+
+    border-radius: 10px;
+}
+
+.search-bar--image {
+    position: absolute;
+    z-index: 100000;
+    top: 10px;
+    right: 10px;
+}
+
+.main-search-bar--language-choose {
+    position: relative;
+    z-index: 100000;
+    top: 50px;
+}
+
+.search-bar--languages {
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all .5s;
+
+    margin-top: -10px;
+    padding: 15px;
+    border: 1px solid rgba(0 0 0 / .1);
+    border-top: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    background-color: rgb(255 255 255 / .5);
+    color: black;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    position: relative;
+    top: 10px;
+}
+
+.search-bar--languages--change {
+    visibility: visible;
+    opacity: 1;
+}
+
+.choose-language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    cursor: pointer;
+    
+    border: 1px solid rgba(0 0 0 / .3);
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 5px;
+}
+
+.new-language {
+    display: flex;
+    align-items: center;
+}
+
+.new-language img {
+    position: relative;
+    top: 4px;
+}
+
+.language:hover {
+    color: rgba(0 0 0 / .5);
+    cursor: pointer;
+}
+
+/* 3 */
+
+.top-authors {
+    position: relative;
+    z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.authors {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author {
+    padding: 10px;
+
+    background-color: rgba(245 247 249 / .35);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 5px;
+}
+
+.author img {
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+/* BOOKS */
+
+.book-img {
+    width: 100px;
+}
+
+.book-caption {
+    display: inline;
+}
+
+.books {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.book {
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+
+    background-color: rgba(245 247 249 / .35);
+
+    border-radius: 5px;
+}
+
+.top-books {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

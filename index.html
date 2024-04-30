@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <video class="video" autoplay muted>
+        <source src="./video/read-book.mp4" type="video/mp4">
+    </video>
+
+    <div class="background"></div>
+
+    <div class="app">
+        <div class="sidebar">
+            <h2 class="sidebar-title">Book Store</h2>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <span class="sidebar-icon"><img src="images/icons/1.svg" alt="" class="sidebar-img"></span>
+                    <span class="sidebar-item--title">Home</span>
+                </li>
+                <li class="sidebar-item">
+                    <span class="sidebar-icon"><img src="images/icons/2.svg" alt="" class="sidebar-img"></span>
+                    <span class="sidebar-item--title">Search</span>
+                </li>
+                <li class="sidebar-item">
+                    <span class="sidebar-icon"><img src="images/icons/3.svg" alt="" class="sidebar-img"></span>
+                    <span class="sidebar-item--title">My Books</span>
+                </li>
+                <li class="sidebar-item">
+                    <span class="sidebar-icon"><img src="images/icons/4.svg" alt="" class="sidebar-img"></span>
+                    <span class="sidebar-item--title">Settings</span>
+                </li>
+            </ul>
+
+            <div class="sidebar-warn">
+                <div class="sidebar-warn--1">About</div>
+                <div class="sidebar-warn--2">Support</div>
+                <div class="sidebar-warn--3">Terms / Conditions</div>
+            </div>
+        </div>
+        <div class="main-search-bar">
+            <div class="search-bar">
+                <div class="search-bar--image"><img src="./images/icons/2.svg" alt="search-bar" class="search-bar--img">
+                </div>
+                <input type="text" class="search" placeholder="Search books here...">
+            </div>
+            <div class="main-search-bar--language-choose">
+                <div class="choose-language">
+                    <span><img src="./images/icons/language.svg" alt=""></span>
+                    <span class="new-language">
+                        <span>Lang...</span>
+                        <span><img src="./images/icons/more.svg" alt=""></span>
+                    </span>
+                </div>
+                <ul class="search-bar--languages">
+                    <li class="language">English</li>
+                    <li class="language">Russian</li>
+                    <li class="language">Spanish</li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-authors">
+            <div class="title">Top Authors</div>
+            <div class="authors">
+                <figure class="author">
+                    <img src="./images/programmers/a.jpg" alt="" class="author-img">
+                    <figcaption class="caption">D. Knuth</figcaption>
+                </figure>
+                <figure class="author">
+                    <img src="./images/programmers/c.jpg" alt="" class="author-img">
+                    <figcaption class="caption">A. Lavelas</figcaption>
+                </figure>
+                <figure class="author">
+                    <img src="./images/programmers/d.jpg" alt="" class="author-img">
+                    <figcaption class="caption">B. Stroustrup</figcaption>
+                </figure>
+                <figure class="author">
+                    <img src="./images/programmers/a.jpg" alt="" class="author-img">
+                    <figcaption class="caption">D. Knuth</figcaption>
+                </figure>
+                <figure class="author">
+                    <img src="./images/programmers/c.jpg" alt="" class="author-img">
+                    <figcaption class="caption">A. Lavelas</figcaption>
+                </figure>
+                <figure class="author">
+                    <img src="./images/programmers/d.jpg" alt="" class="author-img">
+                    <figcaption class="caption">B. Stroustrup</figcaption>
+                </figure>
+                <figure class="author">
+                    <img src="./images/programmers/a.jpg" alt="" class="author-img">
+                    <figcaption class="caption">D. Knuth</figcaption>
+                </figure>
+                <figure class="author">
+                    <img src="./images/programmers/c.jpg" alt="" class="author-img">
+                    <figcaption class="caption">A. Lavelas</figcaption>
+                </figure>
+                <figure class="author">
+                    <img src="./images/programmers/d.jpg" alt="" class="author-img">
+                    <figcaption class="caption">B. Stroustrup</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="top-books">
+            <div class="title">Top Authors</div>
+            <div class="books">
+                <figure class="book">
+                    <img src="./images/top-books/1.jpg" alt="" class="book-img">
+                    <figcaption class="book-caption">Javascript</figcaption>
+                </figure>
+                <figure class="book">
+                    <img src="./images/top-books/2.jpg" alt="" class="book-img">
+                    <figcaption class="book-caption">CSS</figcaption>
+                </figure>
+                <figure class="book">
+                    <img src="./images/top-books/3.jpg" alt="" class="book-img">
+                    <figcaption class="book-caption">Python</figcaption>
+                </figure>
+                <figure class="book">
+                    <img src="./images/top-books/1.jpg" alt="" class="book-img">
+                    <figcaption class="book-caption">Javascript</figcaption>
+                </figure>
+                <figure class="book">
+                    <img src="./images/top-books/2.jpg" alt="" class="book-img">
+                    <figcaption class="book-caption">CSS</figcaption>
+                </figure>
+                <figure class="book">
+                    <img src="./images/top-books/3.jpg" alt="" class="book-img">
+                    <figcaption class="book-caption">Python</figcaption>
+                </figure>
+                <figure class="book">
+                    <img src="./images/top-books/2.jpg" alt="" class="book-img">
+                    <figcaption class="book-caption">CSS</figcaption>
+                </figure>
+                <figure class="book">
+                    <img src="./images/top-books/3.jpg" alt="" class="book-img">
+                    <figcaption class="book-caption">Python</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
